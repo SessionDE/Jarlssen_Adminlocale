@@ -1,0 +1,3 @@
+app/code/local/Jarlssen/Adminlocale     app/code/local/Jarlssen/Adminlocale
+app/design/adminhtml/default/default/layout/jarlssen_adminlocale.xml    app/design/adminhtml/default/default/layout/jarlssen_adminlocale.xml
+etc/modules/Jarlssen_Adminlocale.xml    etc/modules/Jarlssen_Adminlocale.xml

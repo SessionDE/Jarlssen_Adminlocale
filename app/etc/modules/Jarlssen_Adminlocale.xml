@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Jarlssen_Adminlocale>
+            <active>true</active>
+            <codePool>local</codePool>
+            <depends>
+                <Mage_Adminhtml/>
+            </depends>
+        </Jarlssen_Adminlocale>
+    </modules>
+</config>

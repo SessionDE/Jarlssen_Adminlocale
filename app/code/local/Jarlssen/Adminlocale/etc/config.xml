@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Jarlssen_Adminlocale>
+            <version>1.13.0.1.0</version>
+        </Jarlssen_Adminlocale>
+    </modules>
+    <global>
+        <models>
+            <jarlssen_adminlocale>
+                <class>Jarlssen_Adminlocale_Model</class>
+            </jarlssen_adminlocale>
+        </models>
+
+        <blocks>
+            <jarlssen_adminlocale>
+                <class>Jarlssen_Adminlocale_Block</class>
+            </jarlssen_adminlocale>
+        </blocks>
+
+        <events>
+            <admin_user_authenticate_after>
+                <observers>
+                    <jarlssen_adminlocale>
+                        <type>singleton</type>
+                        <class>Jarlssen_Adminlocale_Model_Observer</class>
+                        <method>setLocale</method>
+                    </jarlssen_adminlocale>
+                </observers>
+            </admin_user_authenticate_after>
+        </events>
+    </global>
+
+    <adminhtml>
+        <layout>
+            <updates>
+                <jarlssen_adminlocale>
+                    <file>jarlssen_adminlocale.xml</file>
+                </jarlssen_adminlocale>
+            </updates>
+        </layout>
+    </adminhtml>
+</config>
